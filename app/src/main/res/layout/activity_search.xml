@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/darker"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Miimg3ingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/scrollViewing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="60dp"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/Simg1"
+                android:layout_width="203dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/img1Tit"
+                android:layout_width="203dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@id/Simg1"
+                android:layout_alignTop="@id/Simg1"
+                android:layout_alignEnd="@id/Simg1"
+                android:layout_alignBottom="@id/Simg1"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/articleText"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg1"
+                app:layout_constraintEnd_toEndOf="@+id/Simg1"
+                app:layout_constraintStart_toStartOf="@+id/Simg1" />
+
+            <ImageView
+                android:id="@+id/Simg2"
+                android:layout_width="203dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@+id/Simg1"
+                app:layout_constraintTop_toBottomOf="@+id/Simg1"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/img2Tit"
+                android:layout_width="203dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@id/Simg2"
+                android:layout_alignTop="@id/Simg2"
+                android:layout_alignEnd="@id/Simg2"
+                android:layout_alignBottom="@id/Simg2"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/articleText"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg2"
+                app:layout_constraintEnd_toEndOf="@+id/Simg2"
+                app:layout_constraintStart_toStartOf="@+id/Simg2" />
+
+            <ImageView
+                android:id="@+id/Simg3"
+                android:layout_width="203dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@+id/Simg2"
+                app:layout_constraintTop_toBottomOf="@+id/Simg2"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/img3Tit"
+                android:layout_width="203dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@id/Simg3"
+                android:layout_alignTop="@id/Simg3"
+                android:layout_alignEnd="@id/Simg3"
+                android:layout_alignBottom="@id/Simg3"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/articleText"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg3"
+                app:layout_constraintEnd_toEndOf="@+id/Simg3"
+                app:layout_constraintStart_toStartOf="@+id/Simg3" />
+
+            <ImageView
+                android:id="@+id/Simg4"
+                android:layout_width="203dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@+id/Simg3"
+                app:layout_constraintTop_toBottomOf="@+id/Simg3"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/img4Tit"
+                android:layout_width="203dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@id/Simg4"
+                android:layout_alignTop="@id/Simg4"
+                android:layout_alignEnd="@id/Simg4"
+                android:layout_alignBottom="@id/Simg4"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/articleText"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg4"
+                app:layout_constraintEnd_toEndOf="@+id/Simg4"
+                app:layout_constraintStart_toStartOf="@+id/Simg4" />
+
+            <ImageView
+                android:id="@+id/Simg5"
+                android:layout_width="203dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@+id/Simg4"
+                app:layout_constraintTop_toBottomOf="@+id/Simg4"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/img5Tit"
+                android:layout_width="203dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@id/Simg5"
+                android:layout_alignTop="@id/Simg5"
+                android:layout_alignEnd="@id/Simg5"
+                android:layout_alignBottom="@id/Simg5"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/articleText"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg5"
+                app:layout_constraintEnd_toEndOf="@+id/Simg5"
+                app:layout_constraintStart_toStartOf="@+id/Simg5" />
+
+            <ImageView
+                android:id="@+id/Simg6"
+                android:layout_width="203dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@+id/Simg5"
+                app:layout_constraintTop_toBottomOf="@+id/Simg5"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/img6Tit"
+                android:layout_width="203dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@id/Simg6"
+                android:layout_alignTop="@id/Simg6"
+                android:layout_alignEnd="@id/Simg6"
+                android:layout_alignBottom="@id/Simg6"
+                android:gravity="left"
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/articleText"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg6"
+                app:layout_constraintEnd_toEndOf="@+id/Simg6"
+                app:layout_constraintStart_toStartOf="@+id/Simg6" />
+
+            <ImageView
+                android:id="@+id/Simg7"
+                android:layout_width="203dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@+id/Simg6"
+                app:layout_constraintTop_toBottomOf="@+id/Simg6"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/img7Tit"
+                android:layout_width="203dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@id/Simg7"
+                android:layout_alignTop="@id/Simg7"
+                android:layout_alignEnd="@id/Simg7"
+                android:layout_alignBottom="@id/Simg7"
+                android:gravity="left"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/articleText"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg7"
+                app:layout_constraintEnd_toEndOf="@+id/Simg7"
+                app:layout_constraintStart_toStartOf="@+id/Simg7" />
+
+            <ImageView
+                android:id="@+id/Simg8"
+                android:layout_width="203dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@+id/Simg7"
+                app:layout_constraintTop_toBottomOf="@+id/Simg7"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/img8Tit"
+                android:layout_width="203dp"
+                android:layout_height="100dp"
+                android:layout_alignStart="@id/Simg8"
+                android:layout_alignTop="@id/Simg8"
+                android:layout_alignEnd="@id/Simg8"
+                android:layout_alignBottom="@id/Simg8"
+                android:gravity="left"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="@color/articleText"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg8"
+                app:layout_constraintEnd_toEndOf="@+id/Simg8"
+                app:layout_constraintStart_toStartOf="@+id/Simg8" />
+
+            <TextView
+                android:id="@+id/Simg3Text"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_alignStart="@id/Simg3"
+                android:layout_alignTop="@id/Simg3"
+                android:layout_alignEnd="@id/Simg3"
+                android:layout_alignBottom="@id/Simg3"
+                android:layout_marginStart="8dp"
+                android:gravity="top"
+                android:textColor="@color/articleText"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg3"
+                app:layout_constraintStart_toEndOf="@+id/Simg3" />
+
+            <TextView
+                android:id="@+id/Simg4Text"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_alignStart="@id/Simg4"
+                android:layout_alignTop="@id/Simg4"
+                android:layout_alignEnd="@id/Simg4"
+                android:layout_alignBottom="@id/Simg4"
+                android:layout_marginStart="8dp"
+                android:gravity="top"
+                android:textColor="@color/articleText"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg4"
+                app:layout_constraintStart_toEndOf="@+id/Simg4" />
+
+            <TextView
+                android:id="@+id/Simg5Text"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_alignStart="@id/Simg5"
+                android:layout_alignTop="@id/Simg5"
+                android:layout_alignEnd="@id/Simg5"
+                android:layout_alignBottom="@id/Simg5"
+                android:layout_marginStart="8dp"
+                android:gravity="top"
+                android:textColor="@color/articleText"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg5"
+                app:layout_constraintStart_toEndOf="@+id/Simg5" />
+
+            <TextView
+                android:id="@+id/Simg6Text"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_alignStart="@id/Simg6"
+                android:layout_alignTop="@id/Simg6"
+                android:layout_alignEnd="@id/Simg6"
+                android:layout_alignBottom="@id/Simg6"
+                android:layout_marginStart="8dp"
+                android:gravity="top"
+                android:textColor="@color/articleText"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg6"
+                app:layout_constraintStart_toEndOf="@+id/Simg6" />
+
+            <TextView
+                android:id="@+id/Simg7Text"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_alignStart="@id/Simg7"
+                android:layout_alignTop="@id/Simg7"
+                android:layout_alignEnd="@id/Simg7"
+                android:layout_alignBottom="@id/Simg7"
+                android:layout_marginStart="8dp"
+                android:gravity="top"
+                android:textColor="@color/articleText"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg7"
+                app:layout_constraintStart_toEndOf="@+id/Simg7" />
+
+            <TextView
+                android:id="@+id/Simg8Text"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_alignStart="@id/Simg8"
+                android:layout_alignTop="@id/Simg8"
+                android:layout_alignEnd="@id/Simg8"
+                android:layout_alignBottom="@id/Simg8"
+                android:layout_marginStart="8dp"
+                android:gravity="top"
+                android:textColor="@color/articleText"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg8"
+                app:layout_constraintStart_toEndOf="@+id/Simg8" />
+
+            <TextView
+                android:id="@+id/Simg2Text"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_alignStart="@id/Simg2"
+                android:layout_alignTop="@id/Simg2"
+                android:layout_alignEnd="@id/Simg2"
+                android:layout_alignBottom="@id/Simg2"
+                android:layout_marginStart="8dp"
+                android:gravity="top"
+                android:textColor="@color/articleText"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/Simg2"
+                app:layout_constraintStart_toEndOf="@+id/Simg2" />
+
+            <TextView
+                android:id="@+id/Simg1Text"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_alignStart="@id/Simg1"
+                android:layout_alignTop="@id/Simg1"
+                android:layout_alignEnd="@id/Simg1"
+                android:layout_alignBottom="@id/Simg1"
+                android:layout_marginStart="8dp"
+                android:gravity="top"
+                android:textColor="@color/articleText"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/Simg1"
+                app:layout_constraintTop_toTopOf="@+id/Simg1" />
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/black"
+                android:paddingLeft="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="44dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/search_icon"
+                app:layout_constraintEnd_toStartOf="@+id/search"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navId"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
